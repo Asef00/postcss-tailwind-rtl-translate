@@ -35,11 +35,13 @@ and set this plugin in settings.
 
 ```diff
 module.exports = {
-  plugins: [
-+   require('postcss-tailwind-rtl-translate'),
-    require('autoprefixer')
-  ]
-}
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+    'postcss-rtlcss': {},
++   'postcss-tailwind-rtl-translate': {},
+  },
+};
 ```
 
 [official docs]: https://github.com/postcss/postcss#usage
