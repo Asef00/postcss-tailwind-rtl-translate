@@ -8,10 +8,6 @@
     "postcss-plugin",
     "postcss-tailwind-rtl-translate"
   ],
-  "scripts": {
-    "unit": "node --test index.test.js",
-    "test": "npm run unit && eslint ."
-  },
   "author": "Asef <asefhosseini00@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/Asef00/postcss-tailwind-rtl-translate",
@@ -20,23 +16,6 @@
   },
   "peerDependencies": {
     "postcss": "^8.4.27"
-  },
-  "devDependencies": {
-    "@types/node": "^24.3.0",
-    "eslint": "^8.47.0",
-    "postcss": "^8.4.27"
-  },
-  "eslintConfig": {
-    "parserOptions": {
-      "ecmaVersion": 2017
-    },
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ]
   },
   "dependencies": {
     "postcss-tailwind-rtl-translate": "^0.0.1"
