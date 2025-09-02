@@ -1,10 +1,8 @@
-import { PluginCreator, Root, Rule } from 'postcss';
-
-const postcssRtlTranslate: PluginCreator<{}> = () => {
+const postcssRtlTranslate = () => {
   return {
     postcssPlugin: 'postcss-rtl-translate',
-    Once(root: Root) {
-      root.walkRules((rule: Rule) => {
+    Once(root) {
+      root.walkRules((rule) => {
         // Check if the rule has a class selector that includes a translate-x utility
         if (rule.selector.includes('translate-x')) {
           rule.walkDecls('--tw-translate-x', () => {
