@@ -5,14 +5,14 @@
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css
-.foo {
-  /* Input example */
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
 }
 ```
 
 ```css
-.foo {
-  /* Output example */
+[dir="rtl"] .-translate-x-1\/2 {
+  --tw-translate-x: calc(-50% * -1);
 }
 ```
 
